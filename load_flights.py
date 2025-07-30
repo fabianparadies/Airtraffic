@@ -3,9 +3,10 @@ import pandas as pd
 import requests
 from pandas import json_normalize
 import json
+import os
 
 # The columns are based on the structure of the Global Airport Database
-global_airports = pd.read_csv("GlobalAirportDatabase.txt", sep = ":", header = None)
+global_airports = pd.read_csv("/Users/fabianparadies/Documents/GitHub/Airtraffic/GlobalAirportDatabase.txt", sep = ":", header = None)
 
 # Define the column names for the DataFrame
 global_airports.columns = [
@@ -70,9 +71,23 @@ for iata in europe_airports["IATA_Code"].unique():
 
 print(f"Collected: {len(all_flights)}", flush=True)
 
-print("Display first data: ", flush=True)
-for flight in all_flights[:1]:
-    print(json.dumps(flight, indent=2, ensure_ascii=False), flush=True)
-    
-with open("C:/Users/Fabian/Documents/GitHub/Airtraffic/flights.json", "w", encoding="utf-8") as f:
-    json.dump(all_flights, f, indent=2, ensure_ascii=False)
+
+output_path = "/Users/fabianparadies/Documents/GitHub/Airtraffic/flights.json"
+
+# Load existing data if the file exists
+if os.path.exists(output_path):
+    try:
+        with open(output_path, "r", encoding="utf-8") as f:
+            old_flights = json.load(f)
+    except json.JSONDecodeError:
+        print("Warning: flights.json is not valid JSON. Starting fresh.")
+        old_flights = []
+else:
+    old_flights = []
+
+# Append new flights to old data
+combined_flights = old_flights + all_flights
+
+# Save the combined list back to the JSON file
+with open(output_path, "w", encoding="utf-8") as f:
+    json.dump(combined_flights, f, indent=2, ensure_ascii=False)
