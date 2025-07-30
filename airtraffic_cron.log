@@ -1,0 +1,502 @@
+===== Wed, Jul 30, 2025  2:19:19 PM =====
+===== Wed, Jul 30, 2025  2:20:43 PM =====
+===== Wed, Jul 30, 2025  2:23:58 PM =====
+===== Wed, Jul 30, 2025  2:25:52 PM =====
+[✓] Script executed successfully
+===== Wed, Jul 30, 2025  2:32:28 PM =====
+[✓] Script executed successfully
+===== Wed, Jul 30, 2025  2:33:36 PM =====
+Loading flights for LHR...
+Traceback (most recent call last):
+  File "C:\Users\Fabian\Documents\GitHub\Airtraffic\load_flights.py", line 68, in <module>
+    print(f"{iata} \u2192 API response keys: {api_flights_result.keys()}", flush=True)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Fabian\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 4: character maps to <undefined>
+[✗] Error executing script
+===== Wed, Jul 30, 2025  2:37:24 PM =====
+Fetching flights for LHR
+Traceback (most recent call last):
+  File "C:\Users\Fabian\Documents\GitHub\Airtraffic\load_flights.py", line 61, in <module>
+    print(f"{iata} \u2192 API response keys: {api_flights_result.keys()}", flush=True)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Fabian\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 4: character maps to <undefined>
+[✗] Error executing script
+===== Wed, Jul 30, 2025  2:38:01 PM =====
+Fetching flights for LHR
+LHR API response keys: dict_keys(['pagination', 'data'])
+LHR: 100 Flights received
+Fetching flights for CDG
+CDG API response keys: dict_keys(['pagination', 'data'])
+CDG: 100 Flights received
+Collected: 200
+[✓] Script executed successfully
+===== Wed, Jul 30, 2025  2:44:11 PM =====
+Fetching flights for LHR
+LHR API response keys: dict_keys(['pagination', 'data'])
+LHR: 100 Flights received
+Fetching flights for CDG
+CDG API response keys: dict_keys(['pagination', 'data'])
+CDG: 100 Flights received
+Collected: 200
+Display first data: 
+{
+  "flight_date": "2025-07-30",
+  "flight_status": "active",
+  "departure": {
+    "airport": "Heathrow",
+    "timezone": "Europe/London",
+    "iata": "LHR",
+    "icao": "EGLL",
+    "terminal": "2",
+    "gate": "A17",
+    "delay": null,
+    "scheduled": "2025-07-30T06:00:00+00:00",
+    "estimated": "2025-07-30T06:00:00+00:00",
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "arrival": {
+    "airport": "Lisbon Portela",
+    "timezone": "Europe/Lisbon",
+    "iata": "LIS",
+    "icao": "LPPT",
+    "terminal": "1",
+    "gate": null,
+    "baggage": null,
+    "scheduled": "2025-07-30T08:45:00+00:00",
+    "delay": null,
+    "estimated": null,
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "airline": {
+    "name": "Azul",
+    "iata": "AD",
+    "icao": "AZU"
+  },
+  "flight": {
+    "number": "7232",
+    "iata": "AD7232",
+    "icao": "AZU7232",
+    "codeshared": {
+      "airline_name": "tap air portugal",
+      "airline_iata": "tp",
+      "airline_icao": "tap",
+      "flight_number": "1363",
+      "flight_iata": "tp1363",
+      "flight_icao": "tap1363"
+    }
+  },
+  "aircraft": null,
+  "live": null
+}
+{
+  "flight_date": "2025-07-30",
+  "flight_status": "active",
+  "departure": {
+    "airport": "Heathrow",
+    "timezone": "Europe/London",
+    "iata": "LHR",
+    "icao": "EGLL",
+    "terminal": "2",
+    "gate": "A17",
+    "delay": null,
+    "scheduled": "2025-07-30T06:00:00+00:00",
+    "estimated": "2025-07-30T06:00:00+00:00",
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "arrival": {
+    "airport": "Lisbon Portela",
+    "timezone": "Europe/Lisbon",
+    "iata": "LIS",
+    "icao": "LPPT",
+    "terminal": "1",
+    "gate": null,
+    "baggage": null,
+    "scheduled": "2025-07-30T08:45:00+00:00",
+    "delay": null,
+    "estimated": null,
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "airline": {
+    "name": "Air India",
+    "iata": "AI",
+    "icao": "AIC"
+  },
+  "flight": {
+    "number": "7913",
+    "iata": "AI7913",
+    "icao": "AIC7913",
+    "codeshared": {
+      "airline_name": "tap air portugal",
+      "airline_iata": "tp",
+      "airline_icao": "tap",
+      "flight_number": "1363",
+      "flight_iata": "tp1363",
+      "flight_icao": "tap1363"
+    }
+  },
+  "aircraft": null,
+  "live": null
+}
+{
+  "flight_date": "2025-07-30",
+  "flight_status": "active",
+  "departure": {
+    "airport": "Heathrow",
+    "timezone": "Europe/London",
+    "iata": "LHR",
+    "icao": "EGLL",
+    "terminal": "2",
+    "gate": "A17",
+    "delay": null,
+    "scheduled": "2025-07-30T06:00:00+00:00",
+    "estimated": "2025-07-30T06:00:00+00:00",
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "arrival": {
+    "airport": "Lisbon Portela",
+    "timezone": "Europe/Lisbon",
+    "iata": "LIS",
+    "icao": "LPPT",
+    "terminal": "1",
+    "gate": null,
+    "baggage": null,
+    "scheduled": "2025-07-30T08:45:00+00:00",
+    "delay": null,
+    "estimated": null,
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "airline": {
+    "name": "Azores Airlines",
+    "iata": "S4",
+    "icao": "RZO"
+  },
+  "flight": {
+    "number": "8050",
+    "iata": "S48050",
+    "icao": "RZO8050",
+    "codeshared": {
+      "airline_name": "tap air portugal",
+      "airline_iata": "tp",
+      "airline_icao": "tap",
+      "flight_number": "1363",
+      "flight_iata": "tp1363",
+      "flight_icao": "tap1363"
+    }
+  },
+  "aircraft": null,
+  "live": null
+}
+{
+  "flight_date": "2025-07-30",
+  "flight_status": "active",
+  "departure": {
+    "airport": "Heathrow",
+    "timezone": "Europe/London",
+    "iata": "LHR",
+    "icao": "EGLL",
+    "terminal": "2",
+    "gate": "A17",
+    "delay": null,
+    "scheduled": "2025-07-30T06:00:00+00:00",
+    "estimated": "2025-07-30T06:00:00+00:00",
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "arrival": {
+    "airport": "Lisbon Portela",
+    "timezone": "Europe/Lisbon",
+    "iata": "LIS",
+    "icao": "LPPT",
+    "terminal": "1",
+    "gate": null,
+    "baggage": null,
+    "scheduled": "2025-07-30T08:45:00+00:00",
+    "delay": null,
+    "estimated": null,
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "airline": {
+    "name": "Singapore Airlines",
+    "iata": "SQ",
+    "icao": "SIA"
+  },
+  "flight": {
+    "number": "2773",
+    "iata": "SQ2773",
+    "icao": "SIA2773",
+    "codeshared": {
+      "airline_name": "tap air portugal",
+      "airline_iata": "tp",
+      "airline_icao": "tap",
+      "flight_number": "1363",
+      "flight_iata": "tp1363",
+      "flight_icao": "tap1363"
+    }
+  },
+  "aircraft": null,
+  "live": null
+}
+{
+  "flight_date": "2025-07-30",
+  "flight_status": "active",
+  "departure": {
+    "airport": "Heathrow",
+    "timezone": "Europe/London",
+    "iata": "LHR",
+    "icao": "EGLL",
+    "terminal": "2",
+    "gate": "A17",
+    "delay": null,
+    "scheduled": "2025-07-30T06:00:00+00:00",
+    "estimated": "2025-07-30T06:00:00+00:00",
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "arrival": {
+    "airport": "Lisbon Portela",
+    "timezone": "Europe/Lisbon",
+    "iata": "LIS",
+    "icao": "LPPT",
+    "terminal": "1",
+    "gate": null,
+    "baggage": null,
+    "scheduled": "2025-07-30T08:45:00+00:00",
+    "delay": null,
+    "estimated": null,
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "airline": {
+    "name": "United Airlines",
+    "iata": "UA",
+    "icao": "UAL"
+  },
+  "flight": {
+    "number": "6857",
+    "iata": "UA6857",
+    "icao": "UAL6857",
+    "codeshared": {
+      "airline_name": "tap air portugal",
+      "airline_iata": "tp",
+      "airline_icao": "tap",
+      "flight_number": "1363",
+      "flight_iata": "tp1363",
+      "flight_icao": "tap1363"
+    }
+  },
+  "aircraft": null,
+  "live": null
+}
+[✓] Script executed successfully
+===== Wed, Jul 30, 2025  2:44:54 PM =====
+Fetching flights for LHR
+LHR API response keys: dict_keys(['pagination', 'data'])
+LHR: 100 Flights received
+Fetching flights for CDG
+CDG API response keys: dict_keys(['pagination', 'data'])
+CDG: 100 Flights received
+Collected: 200
+Display first data: 
+{
+  "flight_date": "2025-07-30",
+  "flight_status": "active",
+  "departure": {
+    "airport": "Heathrow",
+    "timezone": "Europe/London",
+    "iata": "LHR",
+    "icao": "EGLL",
+    "terminal": "2",
+    "gate": "A17",
+    "delay": null,
+    "scheduled": "2025-07-30T06:00:00+00:00",
+    "estimated": "2025-07-30T06:00:00+00:00",
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "arrival": {
+    "airport": "Lisbon Portela",
+    "timezone": "Europe/Lisbon",
+    "iata": "LIS",
+    "icao": "LPPT",
+    "terminal": "1",
+    "gate": null,
+    "baggage": null,
+    "scheduled": "2025-07-30T08:45:00+00:00",
+    "delay": null,
+    "estimated": null,
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "airline": {
+    "name": "Azul",
+    "iata": "AD",
+    "icao": "AZU"
+  },
+  "flight": {
+    "number": "7232",
+    "iata": "AD7232",
+    "icao": "AZU7232",
+    "codeshared": {
+      "airline_name": "tap air portugal",
+      "airline_iata": "tp",
+      "airline_icao": "tap",
+      "flight_number": "1363",
+      "flight_iata": "tp1363",
+      "flight_icao": "tap1363"
+    }
+  },
+  "aircraft": null,
+  "live": null
+}
+[✓] Script executed successfully
+===== Wed, Jul 30, 2025  2:50:54 PM =====
+Fetching flights for LHR
+LHR API response keys: dict_keys(['pagination', 'data'])
+LHR: 100 Flights received
+Fetching flights for CDG
+CDG API response keys: dict_keys(['pagination', 'data'])
+CDG: 100 Flights received
+Collected: 200
+Display first data: 
+{
+  "flight_date": "2025-07-30",
+  "flight_status": "active",
+  "departure": {
+    "airport": "Heathrow",
+    "timezone": "Europe/London",
+    "iata": "LHR",
+    "icao": "EGLL",
+    "terminal": "2",
+    "gate": "A17",
+    "delay": null,
+    "scheduled": "2025-07-30T06:00:00+00:00",
+    "estimated": "2025-07-30T06:00:00+00:00",
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "arrival": {
+    "airport": "Lisbon Portela",
+    "timezone": "Europe/Lisbon",
+    "iata": "LIS",
+    "icao": "LPPT",
+    "terminal": "1",
+    "gate": null,
+    "baggage": null,
+    "scheduled": "2025-07-30T08:45:00+00:00",
+    "delay": null,
+    "estimated": null,
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "airline": {
+    "name": "Azul",
+    "iata": "AD",
+    "icao": "AZU"
+  },
+  "flight": {
+    "number": "7232",
+    "iata": "AD7232",
+    "icao": "AZU7232",
+    "codeshared": {
+      "airline_name": "tap air portugal",
+      "airline_iata": "tp",
+      "airline_icao": "tap",
+      "flight_number": "1363",
+      "flight_iata": "tp1363",
+      "flight_icao": "tap1363"
+    }
+  },
+  "aircraft": null,
+  "live": null
+}
+[✓] Script executed successfully
+===== Wed, Jul 30, 2025  2:52:39 PM =====
+Fetching flights for LHR
+LHR API response keys: dict_keys(['pagination', 'data'])
+LHR: 100 Flights received
+Fetching flights for CDG
+CDG API response keys: dict_keys(['pagination', 'data'])
+CDG: 100 Flights received
+Collected: 200
+Display first data: 
+{
+  "flight_date": "2025-07-30",
+  "flight_status": "active",
+  "departure": {
+    "airport": "Heathrow",
+    "timezone": "Europe/London",
+    "iata": "LHR",
+    "icao": "EGLL",
+    "terminal": "2",
+    "gate": "A17",
+    "delay": null,
+    "scheduled": "2025-07-30T06:00:00+00:00",
+    "estimated": "2025-07-30T06:00:00+00:00",
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "arrival": {
+    "airport": "Lisbon Portela",
+    "timezone": "Europe/Lisbon",
+    "iata": "LIS",
+    "icao": "LPPT",
+    "terminal": "1",
+    "gate": null,
+    "baggage": null,
+    "scheduled": "2025-07-30T08:45:00+00:00",
+    "delay": null,
+    "estimated": null,
+    "actual": null,
+    "estimated_runway": null,
+    "actual_runway": null
+  },
+  "airline": {
+    "name": "Azul",
+    "iata": "AD",
+    "icao": "AZU"
+  },
+  "flight": {
+    "number": "7232",
+    "iata": "AD7232",
+    "icao": "AZU7232",
+    "codeshared": {
+      "airline_name": "tap air portugal",
+      "airline_iata": "tp",
+      "airline_icao": "tap",
+      "flight_number": "1363",
+      "flight_iata": "tp1363",
+      "flight_icao": "tap1363"
+    }
+  },
+  "aircraft": null,
+  "live": null
+}
+[✓] Script executed successfully
