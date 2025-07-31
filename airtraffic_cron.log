@@ -49,3 +49,13 @@ CDG API response keys: dict_keys(['pagination', 'data'])
 CDG: 100 Flights received
 Collected: 200
 [✓] Script executed successfully
+=======================================================================================
+===== Thu Jul 31 12:00:00 CEST 2025 =====
+Fetching flights for LHR
+LHR API response keys: dict_keys(['pagination', 'data'])
+LHR: 100 Flights received
+Fetching flights for CDG
+CDG API response keys: dict_keys(['pagination', 'data'])
+CDG: 100 Flights received
+Collected: 200
+[✓] Script executed successfully
