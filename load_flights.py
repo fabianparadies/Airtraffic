@@ -39,10 +39,16 @@ europe_airports = global_airports[global_airports['IATA_Code'].str.lower().isin(
 # Initialize an empty list to collect all flights
 all_flights = []
 
+#access_key fabian
+# 04fd53732de6a34e2aaad028fe31d9d2
+
+#access_key abdul
+#640bd224c49a54b16de086392996639b
+
 # Loop through each IATA code to fetch flight data
 for iata in europe_airports["IATA_Code"].unique():
   params = {
-    "access_key": "04fd53732de6a34e2aaad028fe31d9d2",
+    "access_key": "640bd224c49a54b16de086392996639b",
     "dep_iata": iata
   }
 
