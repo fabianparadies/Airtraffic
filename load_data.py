@@ -19,7 +19,7 @@ OPENSKY_API = "https://opensky-network.org/api/states/all"
 def loadAirports():
     print("Loading airport data...")  # Debug feedback
     #url = r"https://ourairports.com/data/airports.csv"
-    url = r"airports.csv"
+    url = "/Users/fabianparadies/Documents/GitHub/Airtraffic/airports.csv"
     df_airports = pd.read_csv(url, sep=",")
     df_airports = df_airports[['ident', 'name', 'latitude_deg', 'longitude_deg', 'type']]
     df_airports = df_airports[df_airports['type'] == 'large_airport']  # Filter large airports
@@ -108,7 +108,7 @@ def fetch_flightdata():
     }
 
     try:
-        response = requests.get(OPENSKY_API, params=params_central_europe)
+        response = requests.get(OPENSKY_API, params=params_eu)
         if response.status_code == 200:
             print("Flight data fetched successfully.")  # Feedback
             return response.json()
@@ -333,14 +333,14 @@ def nearest_airport(lat, lon, airports):
 
 # Fetch airlines
 df_airlines = get_airlines()
-df_airlines.to_csv("data_airlines.csv", index=False)
+df_airlines.to_csv("/Users/fabianparadies/Documents/GitHub/Airtraffic/data_airlines.csv", index=False)
 
 # Process flight data
 df_new_flights = process_flightdata()
 df_new_flights.head()  # Display the first few rows for verification
 
 # Save the new flight data to a CSV file
-output_path = r"C:\Users\Fabian\Documents\GitHub\Airtraffic\data_flights.csv"
+output_path = "/Users/fabianparadies/Documents/GitHub/Airtraffic/data_flights.csv"
 
 # Load existing data if the file exists
 if os.path.exists(output_path):
@@ -358,5 +358,4 @@ df_combined_flights = pd.concat([df_old_flights, df_new_flights], ignore_index=T
 df_combined_flights.head()  # Display the first few rows for verification
 
 # Save the combined list back to the JSON file
-df_combined_flights.to_csv("data_flights.csv", index=False, encoding="utf-8")
-
+df_combined_flights.to_csv("/Users/fabianparadies/Documents/GitHub/Airtraffic/data_flights.csv", index=False, encoding="utf-8")
