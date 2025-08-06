@@ -88,7 +88,7 @@ def fetch_flightdata():
 
     params_eu = {
         "lamin": 35.0,
-        "lamax": 60.0,
+        "lamax": 72.0,
         "lomin": -10.0,
         "lomax": 30.0
     }
@@ -133,9 +133,9 @@ def convert_TimestamptoHour(unix):
     if pd.notna(unix):
         return datetime.fromtimestamp(int(unix), tz=timezone.utc).strftime('%H:%M:%S')
 
-
+"""
 def process_flightdata_selectedAirline(selectedAirlineCode):
-    """
+    
     Purpose: Processes the raw OpenSky flight data and filters it by the selected airline's ICAO code.
 
     Workflow:
@@ -148,7 +148,7 @@ def process_flightdata_selectedAirline(selectedAirlineCode):
     - Returns a cleaned DataFrame with selected columns ready for display.
 
     Returned Columns: icao24, callsign, departing_from, time_at_Position, longitude, latitude,
-    """
+
     print(f"Processing flight data for airline: {selectedAirlineCode}")  # Feedback
 
     # Load airport data
@@ -187,22 +187,28 @@ def process_flightdata_selectedAirline(selectedAirlineCode):
         print("Converting timestamps...")  # Feedback
         df_filtered_flights["timePosition"] = df_filtered_flights["time_position"].apply(convert_TimestamptoHour)
 
+        # Convert speed from m/s to km/h
+        if "velocity" in df_new_flights.columns:
+            df_new_flights["speed_Kmh"] = df_new_flights["velocity"] * 3.6
+
+
         # Rename columns
         columnRenameMap = {
-            "origin_country": "departing_from",
-            "timePosition": "time_at_Position",
+            "origin_country": "country_icao",
+            "timePosition": "time_at_position",
             "baro_altitude": "altitude",
-            "velocity": "speed_Kmh",
-            "nearest_airport": "estimated_arrival_at"
+            "velocity": "speed_kmh",
+            "nearest_airport": "located_at"
         }
         df_filtered_flights.rename(columns=columnRenameMap, inplace=True)
 
         # Select specific columns for output
-        #display_columns = [
-        #    "icao24", "callsign", "departing_from", "time_at_Position",
-        #    "longitude", "latitude", "altitude", "speed_Kmh"
-        #    "estimated_arrival_at"
-        #]
+        display_columns = [
+            "icao24", "callsign", "country_icao", "time_at_position",
+            "longitude", "latitude", "altitude", "on_ground", "speed_kmh",
+            "true_track", "vertical_rate", "geo_altitude", 
+            "spi", "located_at"
+        ]
 
         print("Flight data processing complete.\n")  # Feedback
         return df_filtered_flights.reset_index(drop=True)
@@ -210,7 +216,7 @@ def process_flightdata_selectedAirline(selectedAirlineCode):
     else:
         print("No flight data available or error fetching data.")  # Feedback
         return pd.DataFrame()
-
+"""
 
 def process_flightdata():
     """
@@ -260,13 +266,14 @@ def process_flightdata():
 
         # Convert speed from m/s to km/h
         if "velocity" in df_new_flights.columns:
-            df_new_flights["speed_Kmh"] = df_new_flights["velocity"] * 3.6
+            df_new_flights["velocity"] = df_new_flights["velocity"] * 3.6
 
         # Rename columns
         columnRenameMap = {
             "origin_country": "country_icao",
             "timePosition": "time_at_position",
             "baro_altitude": "altitude",
+            "velocity": "speed_kmh",
             "nearest_airport": "located_at"
         }
         
@@ -277,7 +284,7 @@ def process_flightdata():
         display_columns = [
             "icao24", "callsign", "country_icao", "time_at_position",
             "longitude", "latitude", "altitude", "on_ground", "speed_kmh",
-            "true_track", "vertical_rate", "sensors", "geo_altitude", 
+            "true_track", "vertical_rate", "geo_altitude", 
             "spi", "located_at"
         ]
 
