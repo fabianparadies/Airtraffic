@@ -267,7 +267,6 @@ def process_flightdata():
             "origin_country": "country_icao",
             "timePosition": "time_at_position",
             "baro_altitude": "altitude",
-            "velocity": "speed_kmh",
             "nearest_airport": "located_at"
         }
         
