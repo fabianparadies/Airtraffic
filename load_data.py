@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import requests
 from geopy.distance import geodesic
+import os
 
 OPENFLIGHTS_URL = "https://raw.githubusercontent.com/jpatokal/openflights/master/data/airlines.dat"
 
@@ -224,7 +225,7 @@ def process_flightdata():
     - Renames columns for clarity (origin_country → departing_from, etc.).
     - Returns a cleaned DataFrame with selected columns ready for display.
     """
-
+    
     # Load airport data
     df_airports = loadAirports()
 
@@ -242,12 +243,12 @@ def process_flightdata():
             "spi", "position_source"
         ]
 
-        df_flights = pd.DataFrame(flightsdata["states"], columns=columns)
-        print(f"Raw flights dataframe shape: {df_flights.shape}")  # Feedback
+        df_new_flights = pd.DataFrame(flightsdata["states"], columns=columns)
+        print(f"Raw flights dataframe shape: {df_new_flights.shape}")  # Feedback
 
         # Find nearest airport for each flight
         print("Finding nearest airports for each flight...")  # Feedback
-        df_flights["nearest_airport"] = df_flights.apply(
+        df_new_flights["nearest_airport"] = df_new_flights.apply(
             lambda row: nearest_airport(row["latitude"], row["longitude"], df_airports)[0]
             if pd.notna(row["latitude"]) and pd.notna(row["longitude"]) else None,
             axis=1
@@ -255,28 +256,35 @@ def process_flightdata():
 
         # Convert timestamps to readable time
         print("Converting timestamps...")  # Feedback
-        df_flights["timePosition"] = df_flights["time_position"].apply(convert_TimestamptoHour)
+        df_new_flights["time_at_position"] = df_new_flights["time_position"].apply(convert_TimestamptoHour)
+
+        # Convert speed from m/s to km/h
+        if "velocity" in df_new_flights.columns:
+            df_new_flights["speed_Kmh"] = df_new_flights["velocity"] * 3.6
 
         # Rename columns
         columnRenameMap = {
-            "origin_country": "departing_from",
-            "timePosition": "time_at_Position",
+            "origin_country": "country_icao",
+            "timePosition": "time_at_position",
             "baro_altitude": "altitude",
-            "velocity": "speed_Kmh",
-            "nearest_airport": "estimated_arrival_at"
+            "velocity": "speed_kmh",
+            "nearest_airport": "located_at"
         }
-        df_flights.rename(columns=columnRenameMap, inplace=True)
+        
+        df_new_flights.rename(columns=columnRenameMap, inplace=True)
+
 
         # Select specific columns for output
-        #display_columns = [
-        #    "icao24", "callsign", "departing_from", "time_at_Position",
-        #    "longitude", "latitude", "altitude", "speed_Kmh"
-        #    "estimated_arrival_at"
-        #]
+        display_columns = [
+            "icao24", "callsign", "country_icao", "time_at_position",
+            "longitude", "latitude", "altitude", "on_ground", "speed_kmh",
+            "true_track", "vertical_rate", "sensors", "geo_altitude", 
+            "spi", "located_at"
+        ]
 
         print("Flight data processing complete.\n")  # Feedback
-        return df_flights.reset_index(drop=True)
-
+        return df_new_flights[display_columns].reset_index(drop=True)
+    
     else:
         print("No flight data available or error fetching data.")  # Feedback
         return pd.DataFrame()
@@ -328,5 +336,27 @@ df_airlines = get_airlines()
 df_airlines.to_csv("data_airlines.csv", index=False)
 
 # Process flight data
-df_flights = process_flightdata()
-df_flights.to_csv("data_flights.csv", index=False)
+df_new_flights = process_flightdata()
+df_new_flights.head()  # Display the first few rows for verification
+
+# Save the new flight data to a CSV file
+output_path = r"C:\Users\Fabian\Documents\GitHub\Airtraffic\data_flights.csv"
+
+# Load existing data if the file exists
+if os.path.exists(output_path):
+    try:
+        df_old_flights = pd.read_csv(output_path, sep = ",", encoding="utf-8")
+        df_old_flights.head()
+    except Exception as e:
+        print(f"Warning: {output_path} is not valid CSV. Starting fresh. Error: {e}")
+        df_old_flights = pd.DataFrame()
+else:
+    df_old_flights = pd.DataFrame()
+
+# Append new flights to old data
+df_combined_flights = pd.concat([df_old_flights, df_new_flights], ignore_index=True)
+df_combined_flights.head()  # Display the first few rows for verification
+
+# Save the combined list back to the JSON file
+df_combined_flights.to_csv("data_flights.csv", index=False, encoding="utf-8")
+

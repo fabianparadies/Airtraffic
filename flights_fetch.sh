@@ -8,7 +8,7 @@ echo "==========================================================================
 echo "===== $(date) =====" >> "$LOGFILE"
 
 # Run the Python script
-/usr/local/bin/python3 -u /Users/fabianparadies/Documents/GitHub/Airtraffic/load_flights.py >> "$LOGFILE" 2>&1
+/usr/local/bin/python3 -u /Users/fabianparadies/Documents/GitHub/Airtraffic/load_data.py >> "$LOGFILE" 2>&1
 
 # Check if the Python script executed successfully
 if [ $? -eq 0 ]; then

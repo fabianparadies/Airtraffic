@@ -1,12 +1,1 @@
-30 6 * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
-30 7 * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
-30 8 * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
-30 9 * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
-0 10 * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
-0 11 * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
-0 12 * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
-0 14 * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
-0 16 * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
-0 18 * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
-0 20 * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
-0 0 * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
+* * * * * /Users/fabianparadies/Documents/GitHub/Airtraffic/flights_fetch.sh
