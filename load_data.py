@@ -3,6 +3,7 @@ import numpy as np
 import requests
 from geopy.distance import geodesic
 import os
+from dotenv import load_dotenv
 
 OPENFLIGHTS_URL = "https://raw.githubusercontent.com/jpatokal/openflights/master/data/airlines.dat"
 
@@ -72,7 +73,7 @@ def get_airlines():
     except Exception as e:
         print(f"Error loading OpenFlights data: {e}")
         return pd.DataFrame(columns=columnNames)
-
+    
 
 def fetch_flightdata():
     """
@@ -361,7 +362,8 @@ else:
 
 # Append new flights to old data
 df_combined_flights = pd.concat([df_old_flights, df_new_flights], ignore_index=True)
-df_combined_flights.head()  # Display the first few rows for verification
+#df_combined_flights.head()  # Display the first few rows for verification
+print(f"Number of rows and columns: {df_combined_flights.shape}")
 
 # Save the combined list back to the JSON file
 df_combined_flights.to_csv("/Users/fabianparadies/Documents/GitHub/Airtraffic/data_flights.csv", index=False, encoding="utf-8")
