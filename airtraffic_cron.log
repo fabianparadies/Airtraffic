@@ -2029,3 +2029,715 @@ IndentationError: expected an indented block after function definition on line 7
     ^^^
 IndentationError: expected an indented block after function definition on line 78
 [✗] Error executing script
+=======================================================================================
+===== Thu Aug  7 11:30:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 11:45:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 12:00:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 12:15:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 12:30:01 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 12:45:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 13:00:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 13:15:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 13:30:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 13:45:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 14:00:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 14:15:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 14:30:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 14:45:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Error: 429 - Too many requests
+No flight data available or error fetching data.
+Number of rows and columns: (210749, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 15:00:01 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3801
+Raw flights dataframe shape: (3801, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (214550, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 15:15:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3906
+Raw flights dataframe shape: (3906, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (218456, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 15:30:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3888
+Raw flights dataframe shape: (3888, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (222344, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 15:45:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3938
+Raw flights dataframe shape: (3938, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (226282, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 16:00:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3893
+Raw flights dataframe shape: (3893, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (230175, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 16:15:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3929
+Raw flights dataframe shape: (3929, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (234104, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 16:30:01 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3859
+Raw flights dataframe shape: (3859, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (237963, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 16:45:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3840
+Raw flights dataframe shape: (3840, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (241803, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 17:00:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3756
+Raw flights dataframe shape: (3756, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (245559, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 17:15:01 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3349
+Raw flights dataframe shape: (3349, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (248908, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 17:30:01 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3376
+Raw flights dataframe shape: (3376, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (252284, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 17:45:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3782
+Raw flights dataframe shape: (3782, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (256066, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 18:00:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3737
+Raw flights dataframe shape: (3737, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (259803, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 18:15:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3677
+Raw flights dataframe shape: (3677, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (263480, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 18:30:01 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3621
+Raw flights dataframe shape: (3621, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (267101, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 18:45:01 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3532
+Raw flights dataframe shape: (3532, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (270633, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 19:00:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3355
+Raw flights dataframe shape: (3355, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (273988, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 19:15:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3280
+Raw flights dataframe shape: (3280, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (277268, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 19:30:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3221
+Raw flights dataframe shape: (3221, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (280489, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 19:45:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3098
+Raw flights dataframe shape: (3098, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (283587, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 20:00:01 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 3016
+Raw flights dataframe shape: (3016, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (286603, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 20:15:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 2913
+Raw flights dataframe shape: (2913, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (289516, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 20:30:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 2795
+Raw flights dataframe shape: (2795, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (292311, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 20:45:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 2745
+Raw flights dataframe shape: (2745, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (295056, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 21:00:01 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 2700
+Raw flights dataframe shape: (2700, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (297756, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 21:15:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 2684
+Raw flights dataframe shape: (2684, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (300440, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 21:30:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 2694
+Raw flights dataframe shape: (2694, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (303134, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 21:45:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 2649
+Raw flights dataframe shape: (2649, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (305783, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 22:00:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 2575
+Raw flights dataframe shape: (2575, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (308358, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 22:15:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 2535
+Raw flights dataframe shape: (2535, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (310893, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 22:30:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 2419
+Raw flights dataframe shape: (2419, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (313312, 14)
+[✓] Script executed successfully
+=======================================================================================
+===== Thu Aug  7 22:45:00 CEST 2025 =====
+Fetching airline data from OpenFlights...
+Fetched 6162 airlines (before filtering).
+Returning 1085 active airlines with ICAO codes.
+Loading airport data...
+Loaded 485 large airports.
+Requesting flight data from OpenSky...
+Flight data fetched successfully.
+Number of flight records fetched: 2285
+Raw flights dataframe shape: (2285, 17)
+Finding nearest airports for each flight...
+Converting timestamps...
+Flight data processing complete.
+
+Number of rows and columns: (315597, 14)
+[✓] Script executed successfully
